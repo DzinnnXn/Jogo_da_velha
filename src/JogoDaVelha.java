@@ -54,13 +54,11 @@ public class JogoDaVelha {
             for (int j = 0; j < 3; j++) {
                 tab.append(tabuleiro[i][j]);
                 if (j < 2) {
-                    tab.append(" | ");
+                    tab.append("  |  ");
                 }
             }
             tab.append("\n");
-            if (i < 2) {
-                tab.append("---------\n");
-            }
+
         }
         JOptionPane.showMessageDialog(null, tab.toString());
     }
